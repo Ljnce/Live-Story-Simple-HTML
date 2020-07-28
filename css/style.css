@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/* Intro */
+#intro {
+    height: 100vh;
+    width: 100vw;
+    background-color: #222222;
+}
+
+.svg-intro {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg > #main-logo-intro {
+    fill: #FFFFFF;
+}
+
+/* Header */
+.container-header {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.min-header {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid #ededed;
+}
+
+.take-your-time {
+    margin-right: 10px;
+}
+
+.take-your-time > p > strong > a:hover {
+    font-size: 20px;
+}
+
+/* Main */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/Background.jpg');
+    background-size: cover;
+    background-position: 0px -40px;
+    font-family: font-family: 'Montserrat', sans-serif;
+}
+
+.container-all {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+}
+
+.min-all {
+    height: calc(100vh - 140px);
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.left {
+    color: #FFFFFF;
+    font-size: 22px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.right {
+    height: 350px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    text-align: center;
+    box-shadow:  0 5px 35px rgba(0,0,0,0.14);
+    padding: 0 10px;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.delivery h1,
+.delivery h2,
+.delivery h4,
+.joke h1,
+.joke p {
+    margin-bottom: 30px;
+}
+
+.show-this-button {
+    font-size: 40px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.show-this-button:hover {
+    cursor: pointer;
+    font-size: 50px;
+    color: #ffb84d;
+}
+
+.refresh-button {
+    height: 40px;
+    width: 100px;
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    font-size: 25px;
+}
+
+.refresh-button:hover {
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #ffb84d;
+    border: 1px solid white;
+    -webkit-box-shadow: 10px 10px 99px 6px #ffb84d;
+    -moz-box-shadow: 10px 10px 99px 6px #ffb84d;
+    box-shadow: 10px 10px 99px 6px #ffb84d;
+}
+
+/* Footer */
+.container-footer {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.min-footer {
+    width: 90%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.5px solid #ededed;
+}
+
+svg > path {
+    fill: #000000;
+}
+
+/* Mobile view */
+@media screen and (max-width: 767px){
+    /* Header */
+    .take-your-time {
+        margin-right: 10px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .take-your-time > p > strong > a:hover {
+        font-size: 11px;
+    }
+
+    /* Main */
+    .min-all {
+        height: calc(100vh - 140px);
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .left {
+        color: #000000;
+    }
+
+    .right {
+        height: 300px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        text-align: center;
+        box-shadow:  0 5px 35px rgba(0,0,0,0.14);
+        padding: 0 10px;
+        border-radius: 12px;
+        padding: 20px;
+    }
+}
