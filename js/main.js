@@ -29,4 +29,9 @@ $.ajax({
 $('.delivery').on('click', '.show-this-button', function(){
     $('.left p').show();
     $('.delivery h2').hide();
-})
+});
+
+// Hello
+$('.svg-intro').on('mouseenter', '#main-logo-intro', function(){
+    $('.enter').show();
+});
